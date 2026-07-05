@@ -1,29 +1,21 @@
-````markdown
 <div align="center">
 
-# 🚀 Portfolio 2026 — Saksham Jha
+# 🚀 Portfolio 2026
 
 ### 🌟 Premium 3D Personal Portfolio Website
 
 A futuristic **3D Portfolio** built with **HTML5, CSS3, JavaScript, Three.js & GSAP**, featuring immersive WebGL animations, glassmorphism UI, smooth interactions, and responsive design.
 
 <p align="center">
-
 <img src="https://img.shields.io/github/stars/Saksham9934/Portfolio-2026?style=for-the-badge&logo=github"/>
-
 <img src="https://img.shields.io/github/forks/Saksham9934/Portfolio-2026?style=for-the-badge&logo=github"/>
-
-<img src="https://img.shields.io/github/license/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
 <img src="https://img.shields.io/github/last-commit/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge"/>
-
 </p>
 
 ### 🌐 Live Demo
 
-🔗 **Portfolio:** https://YOUR-PORTFOLIO-LINK.vercel.app
+🔗 **Portfolio:** _add your deployed link here (e.g. `https://saksham9934.github.io/Portfolio-2026/`)_
 
 </div>
 
@@ -33,68 +25,40 @@ A futuristic **3D Portfolio** built with **HTML5, CSS3, JavaScript, Three.js & G
 
 **Portfolio 2026** is a modern, premium, and interactive personal portfolio designed to showcase my skills, projects, achievements, certifications, and experience as a **Full Stack Developer** and **AI & Machine Learning Enthusiast**.
 
-The website combines elegant UI/UX with powerful WebGL graphics to create an engaging experience while maintaining excellent performance across desktop, tablet, and mobile devices.
+The website combines elegant UI/UX with WebGL graphics to create an engaging experience while maintaining good performance across desktop, tablet, and mobile devices.
 
 ---
 
 # ✨ Key Features
 
 ## 🎨 Modern UI
-
-- ✨ Premium Glassmorphism Design
-- 🌈 Animated Gradient Background
-- 🌙 Dark Theme
-- 📱 Fully Responsive Layout
-- 💎 Beautiful Typography
-- ⚡ Lightning Fast Performance
-
----
+- ✨ Glassmorphism design over an animated gradient background
+- 🌙 Dark theme with copper/ice accent palette
+- 📱 Fully responsive layout, including landscape and notched devices
+- 💎 Modern typography (Space Grotesk, Inter, JetBrains Mono)
 
 ## 🌐 Interactive Experience
-
-- 🎮 Interactive 3D Hero Section
-- 🧊 Three.js Particle Icosahedron
-- 🎯 Mouse Parallax Effect
-- 💡 Dynamic Lighting
-- ✨ Floating Particle Background
-- 🖱️ Custom Animated Cursor
-- 💫 Smooth Scroll Animations
-- 🎭 GSAP Page Transitions
-- 📜 Typing Animation
-- 🎴 3D Hover Tilt Cards
-
----
+- 🎮 Interactive 3D hero section (Three.js particle icosahedron)
+- 🎯 Mouse-parallax camera + cursor-reactive point light
+- ✨ Floating ambient particle background
+- 🖱️ Custom animated cursor
+- 💫 Scroll animations via GSAP + ScrollTrigger
+- 📜 Typing animation cycling through my roles
+- 🎴 3D hover-tilt cards for skills and projects
 
 ## 📊 Dynamic Content
-
-- 📈 Live GitHub Statistics
-- 📦 Repository Count
-- ⭐ Total Stars
-- 👥 Followers
-- 💻 Most Used Languages
-- 🔄 Auto Fetch from GitHub REST API
-
----
+- 📈 Live GitHub statistics — public repos, followers, total stars, and top languages
+- 🔄 Fetched directly from the GitHub REST API (no third-party badge service)
 
 ## 📄 Portfolio Sections
-
-- 🏠 Home
-- 👨‍💻 About
-- 🚀 Skills
-- 💼 Experience
-- 📂 Projects
-- 📜 Certifications
-- 🎓 Education
-- 🏆 Achievements
-- 📊 GitHub Statistics
-- 📬 Contact
+🏠 Home · 👨‍💻 About · 🚀 Skills · 💼 Experience · 📂 Projects · 📜 Certificates · 🎓 Education · 🛠️ Services · 🏆 Achievements · 📊 GitHub Statistics · 📬 Contact
 
 ---
 
 # 🛠️ Tech Stack
 
 | Category | Technologies |
-|------------|----------------|
+|---|---|
 | 🌐 Structure | HTML5 |
 | 🎨 Styling | CSS3, Flexbox, CSS Grid, CSS Variables |
 | ⚙️ Programming | JavaScript (ES6+) |
@@ -112,92 +76,45 @@ The website combines elegant UI/UX with powerful WebGL graphics to create an eng
 
 ```text
 Portfolio-2026/
-│
-├── index.html              # Website Structure
-├── style.css               # Complete Styling
-├── script.js               # Three.js + GSAP + JavaScript
-│
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── certificates/
-│
-├── og-image.png            # Open Graph Image
-├── resume.pdf              # Resume Download
+├── index.html       # Page structure & content
+├── style.css        # All styling, design tokens, responsive rules
+├── script.js        # Three.js scene, GSAP animations, interactions
+├── og-image.png      # Open Graph / social share preview image
+├── resume.pdf         # Resume — referenced by the Download CV button
+├── LICENSE
 └── README.md
 ```
+
+> Note: `resume.pdf` needs to be added manually — it's referenced by the Download CV button but isn't generated automatically.
 
 ---
 
 # 🚀 Getting Started
 
-## Clone Repository
-
 ```bash
+# Clone the repository
 git clone https://github.com/Saksham9934/Portfolio-2026.git
-```
-
-## Move into Project
-
-```bash
 cd Portfolio-2026
-```
 
-## Run Locally
-
-Simply open
-
-```text
-index.html
-```
-
-or use
-
-```bash
+# Run locally — either open index.html directly in a browser, or serve it:
 npx serve .
 ```
+
+No build step or dependencies required — it's a static site.
 
 ---
 
 # 🌐 Deployment
 
 ## GitHub Pages
-
-1. Push project to GitHub
-
-2. Open
-
-```
-Settings → Pages
-```
-
-3. Select
-
-```
-Branch → main
-```
-
-4. Folder
-
-```
-/root
-```
-
-5. Save
-
-Your website will be live at
-
-```
-https://saksham9934.github.io/Portfolio-2026/
-```
-
----
+1. Push this repo to GitHub.
+2. Go to **Settings → Pages**.
+3. Under **Source**, select the `main` branch and `/root`.
+4. Save — your site will be live at `https://saksham9934.github.io/Portfolio-2026/`.
 
 ## Vercel
-
 ```bash
 npm i -g vercel
-
 vercel
 ```
 
@@ -205,213 +122,59 @@ vercel
 
 # 💻 Highlights
 
-✅ Premium UI
+✅ Premium glassmorphism UI &nbsp;·&nbsp; ✅ Fully responsive &nbsp;·&nbsp; ✅ Interactive WebGL &nbsp;·&nbsp; ✅ GSAP animations &nbsp;·&nbsp; ✅ Live GitHub API integration &nbsp;·&nbsp; ✅ Respects `prefers-reduced-motion`
 
-✅ Fully Responsive
+---
 
-✅ Interactive WebGL
+# 🛣️ Roadmap
 
-✅ GSAP Animations
+- ✅ Responsive layout
+- ✅ Glassmorphism UI
+- ✅ Three.js hero
+- ✅ GSAP scroll animations
+- ✅ Live GitHub API integration
+- ✅ Working contact form
+- ⏳ Light/dark theme switcher
+- ⏳ Blog section
+- ⏳ PWA support
 
-✅ Modern JavaScript
+---
 
-✅ GitHub API Integration
+# 🤝 Contributing
 
-✅ Accessibility Friendly
+Contributions are welcome — this is a personal portfolio, but suggestions and fixes are appreciated.
 
-✅ Performance Optimized
+```bash
+git checkout -b feature-name
+git commit -m "Added awesome feature"
+git push origin feature-name
+```
+
+Then open a Pull Request. Please keep new code consistent with the existing style.
+
+---
+
+# 🙌 Acknowledgements
+
+Built with the help of these open-source projects: **Three.js**, **GSAP**, **Font Awesome**, **Devicon**, **Google Fonts**, and the **GitHub REST API**. Contact form powered by **FormSubmit**.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) for details.
 
 ---
 
 # 📬 Contact
 
-### 👨‍💻 Saksham Jha
-
-📧 Email
-
-```
-sakshamjha3027@gmail.com
-```
-
-🐙 GitHub
-
-https://github.com/Saksham9934
-
-💼 LinkedIn
-
-https://www.linkedin.com/in/saksham-jha-141623275/
-
-🌐 Portfolio
-
-https://YOUR-PORTFOLIO.vercel.app
-
----
-
-# ⭐ Support
-
-If you like this project,
-
-⭐ Star the repository
-
-🍴 Fork it
-
-💬 Share your feedback
+**Saksham Jha**
+📧 sakshamjha3027@gmail.com &nbsp;·&nbsp; 🐙 [GitHub](https://github.com/Saksham9934) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/saksham-jha-141623275/)
 
 ---
 
 <div align="center">
-
-## 💙 Made with HTML • CSS • JavaScript • Three.js • GSAP
-
-### ⭐ Don't forget to Star this Repository!
-
-# 🖼️ Architecture
-
-```text
-                    🌐 User Browser
-                           │
-                           ▼
-                   ┌────────────────┐
-                   │   index.html   │
-                   └────────────────┘
-                           │
-        ┌──────────────────┼──────────────────┐
-        ▼                  ▼                  ▼
- ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
- │  style.css   │   │  script.js   │   │ Three.js     │
- │ Glass UI     │   │ GSAP Effects │   │ WebGL Scene  │
- └──────────────┘   └──────────────┘   └──────────────┘
-                           │
-                           ▼
-                 GitHub REST API
-                           │
-                           ▼
-               Live GitHub Statistics
-
-                           │
-                           ▼
-                    FormSubmit API
-                           │
-                           ▼
-                    Contact Form
-```
-
----
-# 🛣️ Roadmap
-
-- ✅ Responsive Portfolio
-- ✅ Glassmorphism UI
-- ✅ Three.js Hero
-- ✅ GSAP Animations
-- ✅ GitHub API Integration
-- ✅ Contact Form
-- ✅ Dark Theme
-- ✅ Project Showcase
-- ⏳ Blog Section
-- ⏳ Admin Dashboard
-- ⏳ CMS Integration
-- ⏳ Multi-language Support
-- ⏳ Theme Switcher
-- ⏳ Performance Optimization
-- ⏳ PWA Support
-- ⏳ AI Chat Assistant
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-If you'd like to improve this project:
-
-1. Fork the repository
-
-2. Create a new branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit your changes
-
-```bash
-git commit -m "Added awesome feature"
-```
-
-4. Push your branch
-
-```bash
-git push origin feature-name
-```
-
-5. Open a Pull Request
-
-Please make sure your code follows the existing coding style.
-
-⭐ Every contribution is appreciated!
-
-# 🙌 Acknowledgements
-
-Special thanks to these amazing projects and communities:
-
-- 💙 Three.js
-- 💚 GSAP
-- 💛 Font Awesome
-- 💜 Devicon
-- ❤️ Google Fonts
-- 🚀 GitHub REST API
-- 🌍 FormSubmit
-- ☁️ Vercel
-- 🐙 GitHub
-
-Thank you to the open-source community for making projects like this possible.
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
-Feel free to use, modify, and distribute this project with proper attribution.
-
-See the **LICENSE** file for more information.
-
-# 📈 Repository Information
-
-<p align="center">
-
-<img src="https://img.shields.io/github/stars/Saksham9934/Portfolio-2026?style=for-the-badge&logo=github"/>
-
-<img src="https://img.shields.io/github/forks/Saksham9934/Portfolio-2026?style=for-the-badge&logo=github"/>
-
-<img src="https://img.shields.io/github/watchers/Saksham9934/Portfolio-2026?style=for-the-badge&logo=github"/>
-
-<img src="https://img.shields.io/github/issues/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
-<img src="https://img.shields.io/github/issues-pr/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
-<img src="https://img.shields.io/github/license/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
-<img src="https://img.shields.io/github/last-commit/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
-<img src="https://img.shields.io/github/repo-size/Saksham9934/Portfolio-2026?style=for-the-badge"/>
-
-<img src="https://komarev.com/ghpvc/?username=Saksham9934&style=for-the-badge&color=blue"/>
-
-</p>
-
----
-
-<div align="center">
-
-# 🌟 Thank You for Visiting!
-
-### If you found this project useful, please consider giving it a ⭐
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6a11cb,100:2575fc&height=140&section=footer"/>
 
 ### 💙 Made with HTML • CSS • JavaScript • Three.js • GSAP
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Thanks+for+visiting!;Happy+Coding!;Keep+Learning+Keep+Building!;See+you+again!+🚀"/>
-
 </div>
-
-
-</div>
-````
