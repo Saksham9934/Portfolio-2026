@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saksham Jha — Full Stack Developer &amp; AI/ML Enthusiast</title>
+<meta name="description" content="Portfolio of Saksham Jha — Computer Engineering student, Full Stack Developer and AI/ML enthusiast based in Delhi, India. Explore projects, skills, and experience." />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Saksham Jha — Full Stack Developer & AI/ML Enthusiast" />
+<meta property="og:description" content="Computer Engineering student building with the MERN stack and exploring AI/ML. Explore projects, skills, and experience." />
+<meta property="og:image" content="og-image.png" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0b0e'/%3E%3Ctext x='32' y='43' font-family='monospace' font-weight='bold' font-size='26' fill='%23ff6a3d' text-anchor='middle'%3ESJ%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loading screen -->
+<div id="loader">
+  <div class="loader-mark"><span>S</span><span>J</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <div class="loader-pct" id="loaderPct">0%</div>
+</div>
+
+<!-- Ambient layers -->
+<div class="bg-gradient" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+<canvas id="particleCanvas" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="progress-rail"><div class="fill" id="progressFill"></div></div>
+
+<!-- Nav -->
+<nav class="glass">
+  <a href="#home" class="logo">SAKSHAM<span>.</span>JHA</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-grid">
+    <a href="#home" data-idx="00"><span class="mi">00</span>Home</a>
+    <a href="#about" data-idx="01"><span class="mi">01</span>About</a>
+    <a href="#skills" data-idx="02"><span class="mi">02</span>Skills</a>
+    <a href="#experience" data-idx="03"><span class="mi">03</span>Experience</a>
+    <a href="#projects" data-idx="04"><span class="mi">04</span>Projects</a>
+    <a href="#certificates" data-idx="05"><span class="mi">05</span>Certificates</a>
+    <a href="#education" data-idx="06"><span class="mi">06</span>Education</a>
+    <a href="#services" data-idx="07"><span class="mi">07</span>Services</a>
+    <a href="#achievements" data-idx="08"><span class="mi">08</span>Achievements</a>
+    <a href="#github" data-idx="09"><span class="mi">09</span>GitHub Stats</a>
+    <a href="#contact" data-idx="10"><span class="mi">10</span>Contact</a>
+  </div>
+  <div class="menu-footer">
+    <span>sakshamjha3027@gmail.com</span>
+    <div class="menu-socials">
+      <a href="https://github.com/Saksham9934" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/saksham-jha-141623275/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://x.com/SAKSHAMJHA197" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61563999322121" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://t.me/Saksham77282/" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-kicker">// welcome to my portfolio</div>
+    <h1 class="hero-title">Saksham<br><span class="stroke">Jha</span></h1>
+    <p class="hero-role"><span id="typedRole"></span><span class="caret">|</span></p>
+    <p class="hero-sub">A passionate Computer Engineering student specializing in Full Stack Development, AI &amp; Machine Learning, Python, React, and modern web technologies.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-solid magnetic">View Work →</a>
+      <a href="SASKSHAM_JHA_RESUME.pdf" download class="btn btn-ghost magnetic"><i class="fa-solid fa-download"></i> Download Resume</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="bar"></div>SCROLL</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">01 — about me</div>
+    <h2 class="section-title reveal">The person behind the code</h2>
+    <div class="about-grid">
+      <div class="avatar-wrap reveal">
+        <div class="avatar-frame">
+          <div class="avatar-placeholder">SJ</div>
+        </div>
+        <div class="avatar-tag glass">📍 Delhi, India</div>
+      </div>
+      <div class="reveal">
+        <p>I'm <b>Saksham Jha</b>, a Computer Engineering student who loves turning ideas into working software — from pixel-perfect front ends to the databases and logic running underneath them.</p>
+        <p>My core stack is the <b>MERN ecosystem</b> alongside <b>Python</b>, and I'm continually deepening my work in <b>AI &amp; Machine Learning</b>. I like projects that force me to learn something new — a database schema, a model architecture, an animation technique.</p>
+        <p>Outside of coursework, I've completed internships spanning full stack development, AI/ML, and Python — each one pushing me to ship real, working systems rather than just tutorials.</p>
+        <div class="facts glass">
+          <div class="fact-row"><span>Role</span><span>Full Stack Developer</span></div>
+          <div class="fact-row"><span>Focus</span><span>AI / ML · MERN</span></div>
+          <div class="fact-row"><span>Location</span><span>Delhi, India</span></div>
+          <div class="fact-row"><span>Email</span><span>sakshamjha3027@gmail.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">02 — skills</div>
+    <h2 class="section-title reveal">Tools I build with</h2>
+
+    <div class="skill-categories reveal-stagger">
+      <div class="skill-cat glass">
+        <h4>Languages</h4>
+        <div class="skill-icons">
+          <div class="skill-icon" title="JavaScript"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="skill-icon" title="Python"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          <div class="skill-icon" title="C++"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+          <div class="skill-icon" title="Java"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+          <div class="skill-icon" title="SQL"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+        </div>
+      </div>
+      <div class="skill-cat glass">
+        <h4>Frontend</h4>
+        <div class="skill-icons">
+          <div class="skill-icon" title="HTML5"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+          <div class="skill-icon" title="CSS3"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+          <div class="skill-icon" title="React"><i class="devicon-react-original colored"></i><span>React</span></div>
+          <div class="skill-icon" title="Three.js"><i class="devicon-threejs-original"></i><span>Three.js</span></div>
+        </div>
+      </div>
+      <div class="skill-cat glass">
+        <h4>Backend</h4>
+        <div class="skill-icons">
+          <div class="skill-icon" title="Node.js"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+          <div class="skill-icon" title="Express.js"><i class="devicon-express-original"></i><span>Express</span></div>
+          <div class="skill-icon" title="MongoDB"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+          <div class="skill-icon" title="Flask"><i class="devicon-flask-original"></i><span>Flask</span></div>
+        </div>
+      </div>
+      <div class="skill-cat glass">
+        <h4>Tools</h4>
+        <div class="skill-icons">
+          <div class="skill-icon" title="Git"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+          <div class="skill-icon" title="GitHub"><i class="devicon-github-original"></i><span>GitHub</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proficiency reveal">
+      <h4 class="prof-title">Core Proficiency</h4>
+      <div class="bar-list">
+        <div class="bar-item"><div class="bar-item-head"><span>HTML</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+        <div class="bar-item"><div class="bar-item-head"><span>JAVA</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+        <div class="bar-item"><div class="bar-item-head"><span>REACT.JS</span><span>60%</span></div><div class="bar-track"><div class="bar-fill" data-w="60"></div></div></div>
+        <div class="bar-item"><div class="bar-item-head"><span>CSS</span><span>50%</span></div><div class="bar-track"><div class="bar-fill" data-w="50"></div></div></div>
+        <div class="bar-item"><div class="bar-item-head"><span>JAVASCRIPT</span><span>20%</span></div><div class="bar-track"><div class="bar-fill" data-w="20"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">03 — experience</div>
+    <h2 class="section-title reveal">Where I've worked</h2>
+    <div class="timeline reveal-stagger">
+      <div class="tl-item glass">
+        <div class="tl-year">2024</div>
+        <h4>Advanced IT &amp; Professional Skills Internship</h4>
+        <span class="org">Tech Mahindra Foundation</span>
+        <p>Strengthened professional IT fundamentals and applied them to real project-based tasks.</p>
+      </div>
+      <div class="tl-item glass">
+        <div class="tl-year">2024</div>
+        <h4>AI &amp; Machine Learning Internship</h4>
+        <span class="org">Netaji Subhas University of Technology (NSUT)</span>
+        <p>Worked on applied ML models, including image classification pipelines for medical imaging.</p>
+      </div>
+      <div class="tl-item glass">
+        <div class="tl-year">2024</div>
+        <h4>Python Development Internship</h4>
+        <span class="org">Upskill Campus</span>
+        <p>Built Python-based tools and automation scripts, strengthening core backend fundamentals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">04 — projects</div>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <div class="project-grid reveal-stagger">
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#ff6a3d;--g2:#7a3722;"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>ShopVerse</h3>
+        <p>A full-stack e-commerce platform with product listings, cart, and checkout flow.</p>
+        <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#49e0ff;--g2:#1d5866;"><i class="fa-solid fa-circle-question"></i></div>
+        <h3>QuizMaster</h3>
+        <p>An interactive quiz app with timers, scoring, and a leaderboard system.</p>
+        <div class="project-tags"><span>JavaScript</span><span>React</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#ff6a3d;--g2:#49e0ff;"><i class="fa-solid fa-id-badge"></i></div>
+        <h3>Portfolio Website</h3>
+        <p>A 3D, animation-driven personal portfolio showcasing skills and projects.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>Three.js</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#8b909c;--g2:#22252d;"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <h3>Inventory Management System</h3>
+        <p>A database-driven system for tracking stock, orders, and suppliers.</p>
+        <div class="project-tags"><span>Python</span><span>SQL</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#7a3722;--g2:#1d5866;"><i class="fa-solid fa-list-check"></i></div>
+        <h3>Todo Application</h3>
+        <p>A task manager with create, complete, and filter functionality.</p>
+        <div class="project-tags"><span>JavaScript</span><span>React</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#49e0ff;--g2:#ff6a3d;"><i class="fa-solid fa-xmark"></i></div>
+        <h3>Tic Tac Toe</h3>
+        <p>A classic two-player game with win detection and score tracking.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#ff6a3d;--g2:#8b909c;"><i class="fa-solid fa-hand-scissors"></i></div>
+        <h3>Rock Paper Scissors</h3>
+        <p>A browser game with animated results and a running score.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#1d5866;--g2:#49e0ff;"><i class="fa-solid fa-car"></i></div>
+        <h3>Car Racing Game</h3>
+        <p>A fast-paced browser racing game with obstacles and increasing difficulty.</p>
+        <div class="project-tags"><span>JavaScript</span><span>Canvas</span></div>
+      </div>
+
+      <div class="project-card glass tilt-target">
+        <div class="project-thumb" style="--g1:#7a3722;--g2:#ff6a3d;"><i class="fa-solid fa-book-open"></i></div>
+        <h3>E-Book Library</h3>
+        <p>A digital library app for browsing, searching, and reading books online.</p>
+        <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+      </div>
+
+    </div>
+    <p class="project-note">Repo links coming soon — check <a href="https://github.com/Saksham9934" target="_blank">github.com/Saksham9934</a> for the latest code.</p>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">05 — certificates</div>
+    <h2 class="section-title reveal">Certifications</h2>
+    <div class="cert-grid reveal-stagger">
+      <div class="cert-card glass"><i class="fa-solid fa-certificate"></i><h4>Advanced IT &amp; Professional Skills</h4><span>Tech Mahindra Foundation</span></div>
+      <div class="cert-card glass"><i class="fa-solid fa-certificate"></i><h4>Artificial Intelligence &amp; Machine Learning</h4><span>NSUT</span></div>
+      <div class="cert-card glass"><i class="fa-solid fa-certificate"></i><h4>Python Development</h4><span>Upskill Campus</span></div>
+      <div class="cert-card glass"><i class="fa-solid fa-certificate"></i><h4>React.js Development</h4><span>Self-paced</span></div>
+      <div class="cert-card glass"><i class="fa-solid fa-certificate"></i><h4>Database Management Systems</h4><span>Coursework</span></div>
+      <div class="cert-card glass"><i class="fa-solid fa-certificate"></i><h4>Data Structures &amp; Algorithms</h4><span>In progress</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">06 — education</div>
+    <h2 class="section-title reveal">Academic background</h2>
+    <div class="timeline reveal-stagger">
+      <div class="tl-item glass">
+        <div class="tl-year">2025 — Present</div>
+        <h4>B.Tech, Computer Science &amp; Engineering</h4>
+        <span class="org">Maharaja Surajmal Institute of Technology (via IPU LEET)</span>
+        <p>Admitted with All India Rank 206 in IPU LEET 2025.</p>
+      </div>
+      <div class="tl-item glass">
+        <div class="tl-year">Completed</div>
+        <h4>Diploma in Computer Engineering</h4>
+        <span class="org">Delhi Skill and Entrepreneurship University</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">07 — services</div>
+    <h2 class="section-title reveal">How I can help</h2>
+    <div class="services-grid reveal-stagger">
+      <div class="service-card glass">
+        <div class="service-num">01</div>
+        <h3>Full Stack Development</h3>
+        <p>Responsive React front ends paired with scalable Node.js/Express back ends and databases.</p>
+      </div>
+      <div class="service-card glass">
+        <div class="service-num">02</div>
+        <h3>AI &amp; ML Solutions</h3>
+        <p>Applied machine learning — from data preprocessing to trained, deployable models.</p>
+      </div>
+      <div class="service-card glass">
+        <div class="service-num">03</div>
+        <h3>Data &amp; Excel Analysis</h3>
+        <p>Advanced Excel formulas, data cleaning, visualization, and reporting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">08 — achievements</div>
+    <h2 class="section-title reveal">By the numbers</h2>
+    <div class="counter-grid reveal-stagger">
+      <div class="counter-card glass"><div class="counter" data-target="9">0</div><span>Projects Built</span></div>
+      <div class="counter-card glass"><div class="counter" data-target="3">0</div><span>Internships</span></div>
+      <div class="counter-card glass"><div class="counter" data-target="15">0</div><span>Tech Skills</span></div>
+      <div class="counter-card glass"><div class="counter" data-target="206">0</div><span>AIR — IPU LEET 2025</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB STATS -->
+<section id="github" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">09 — github statistics</div>
+    <h2 class="section-title reveal">Open-source activity</h2>
+    <div class="github-grid reveal">
+      <div class="gh-stats-card glass">
+        <div class="gh-stats-row" id="ghStatsRow">
+          <div class="gh-stat"><span class="gh-num" data-gh="public_repos">—</span><span class="gh-label">Public Repos</span></div>
+          <div class="gh-stat"><span class="gh-num" data-gh="followers">—</span><span class="gh-label">Followers</span></div>
+          <div class="gh-stat"><span class="gh-num" data-gh="stars">—</span><span class="gh-label">Total Stars</span></div>
+          <div class="gh-stat"><span class="gh-num" data-gh="following">—</span><span class="gh-label">Following</span></div>
+        </div>
+        <p class="gh-status" id="ghStatus">Loading live stats from GitHub…</p>
+      </div>
+      <div class="gh-lang-card glass">
+        <h4>Top Languages</h4>
+        <div id="ghLangList" class="gh-lang-list"><span class="gh-label">Loading…</span></div>
+      </div>
+    </div>
+    <p class="project-note">Live data from <a href="https://github.com/Saksham9934" target="_blank">github.com/Saksham9934</a> via the GitHub API.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="eyebrow reveal">10 — contact</div>
+    <h2 class="section-title reveal">Let's build something.</h2>
+    <div class="contact-grid">
+      <form class="contact-form glass reveal" id="contactForm" action="https://formsubmit.co/sakshamjha3027@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from portfolio site" />
+        <input type="hidden" name="_captcha" value="false" />
+        <label>Name<input type="text" name="name" required placeholder="Your name" /></label>
+        <label>Email<input type="email" name="email" required placeholder="you@example.com" /></label>
+        <label>Message<textarea name="message" rows="5" required placeholder="Tell me about your project..."></textarea></label>
+        <button type="submit" class="btn btn-solid magnetic">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+      <div class="reveal">
+        <a href="mailto:sakshamjha3027@gmail.com" class="big-link magnetic">sakshamjha3027@gmail.com</a>
+        <div class="contact-meta">Based in Delhi, India<br>Open to full stack &amp; internship roles</div>
+        <div class="socials">
+          <a href="https://github.com/Saksham9934" target="_blank"><i class="fa-brands fa-github"></i> GitHub<span>↗</span></a>
+          <a href="https://www.linkedin.com/in/saksham-jha-141623275/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn<span>↗</span></a>
+          <a href="https://x.com/SAKSHAMJHA197" target="_blank"><i class="fa-brands fa-x-twitter"></i> X / Twitter<span>↗</span></a>
+          <a href="https://www.facebook.com/profile.php?id=61563999322121" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook<span>↗</span></a>
+          <a href="https://t.me/Saksham77282/" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram<span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Saksham Jha. All rights reserved.</span>
+  <button id="toTop" class="magnetic" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
