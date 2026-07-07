@@ -15,7 +15,7 @@ A futuristic **3D Portfolio** built with **HTML5, CSS3, JavaScript, Three.js & G
 
 ### 🌐 Live Demo
 
-🔗 **Portfolio:** _add your deployed link here (e.g. `sakshamjha-portfolio.vercel.app`)_
+🔗 **Portfolio:** sakshamjha-portfolio.vercel.app
 
 </div>
 
